@@ -1,7 +1,16 @@
 {
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
-    "@types/node": "^26.2.0"
+    "@types/node": "^26.2.0",
+    "cors": "^2.8.6",
+    "tsx": "^4.23.12"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.js",
+    "build": "tsc",
+    "main": "dist/server.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
